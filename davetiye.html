@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Davetiye - Tatlı Hayat</title>
+  <link href="logo3.png" rel="icon">
+  <link href="logo3.png" rel="logo3">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #fff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    h1 {
+      color: #e91e63;
+      margin-bottom: 10px;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #e91e63;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #4a148c;
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Davetlisin!</h1>
+    <p>En tatlı kutlamaya seni de bekliyoruz!</p>
+    <button onclick="showMessage()">Detayları Göster</button>
+    <div id="invitationMessage" class="message">
+      🎂 10 Nisan 2025, Perşembe<br>
+      ⏰ Saat: 9.00<br>
+      📍 Tatlı Hayat Pastanesi, Bursa<br><br>
+      Sürprizlerle dolu, şeker gibi bir gün seni bekliyor!
+      <a href="index.html">Anasayfaya Dönebilirsin</a>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("invitationMessage").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
